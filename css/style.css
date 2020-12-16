@@ -800,7 +800,7 @@ blockquote {
 }
 .av-pic {
   display: block;
-  position: fixed;
+  position: absolute;
   width: 130px;
   height: 130px;
   top: 115px;
@@ -811,7 +811,7 @@ blockquote {
 }
 .av-bg {
   display: block;
-  position: fixed;
+  position: absolute;
   width: 150px;
   height: 150px;
   top: 105px;
@@ -881,9 +881,12 @@ blockquote {
   .avatar {
     height: 120px;
   }
-  .avatar > .av-pic {
-    margin-top: 55px;
-  }
+}
+> .av-bg {
+  top: 55px;
+}
+> .av-pic {
+  top: 55px;
 }
 .ListView {
   margin-bottom: 7em;
