@@ -572,7 +572,7 @@ blockquote {
     position: absolute;
     left: 0;
     right: 0;
-    padding-top: 20em;
+    padding-top: 10em;
     overflow-x: hidden;
     max-width: none;
     width: auto;
@@ -848,7 +848,7 @@ blockquote {
     position: absolute;
     left: 0;
     right: 0;
-    height: 10em;
+    height: 7em;
     width: auto;
     overflow: visible;
   }
@@ -875,18 +875,28 @@ blockquote {
     min-width: 70px;
   }
   .media {
-    bottom: -2.5em;
-    right: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 0;
+/*
+        bottom: -2.5em
+        right: 1.5em
+        */
   }
   .avatar {
     height: 120px;
+    text-align: center;
   }
-}
-> .av-bg {
-  top: 55px;
-}
-> .av-pic {
-  top: 55px;
+  .av-bg {
+    top: 45px;
+  }
+  .av-pic {
+    top: 55px;
+  }
 }
 .ListView {
   margin-bottom: 7em;
