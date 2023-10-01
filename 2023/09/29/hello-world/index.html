@@ -131,7 +131,6 @@
     <div class="tocbot-list">
     </div>
     <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
         <a onclick="go_top()">Back to top</a>
         <a onclick="go_bottom()">Go to bottom</a>
     </div>
@@ -160,19 +159,9 @@
 
     document.ready(function() {
         tocbot.init(obj_merge(tocbot_default_config, {
-            collapseDepth: 1
+            collapseDepth: 6
         }));
     });
-
-    function expand_toc() {
-        var b = document.querySelector('.tocbot-toc-expand');
-        var expanded = b.getAttribute('data-expanded');
-        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
-        tocbot.refresh(obj_merge(tocbot_default_config, {
-            collapseDepth: expanded ? 1 : DEPTH_MAX
-        }));
-        b.innerText = expanded ? 'Expand all' : 'Collapse all';
-    }
 
     function go_top() {
         window.scrollTo(0, 0);
